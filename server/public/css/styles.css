@@ -1,0 +1,58 @@
+body {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+  }
+
+.pod-btn {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    width: 160px;
+    height: 60px;
+    background-color: teal;
+    margin: 10px;
+}
+
+.pod-btn:active {
+    background-color: rgb(0, 110, 110);
+}
+
+.pod-covers {
+    padding: 10px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+      content: '';  
+    box-sizing: border-box;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-bottom-color: #FF3D00;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 

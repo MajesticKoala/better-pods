@@ -1,0 +1,14 @@
+<%- include('./includes/header', { 
+    pageTitle: `Better Podcasts`
+  })
+  %>
+    <h2>Subscribed podcasts</h2>
+    <div class="pod-btn" id="pod-btn" onclick="getShows()">Get Subscriptions</div>
+    <div class="pod-btn" id="pod-btn" onclick="getEpisodes()">Get Episodes</div>
+    <div class="pod-covers"></div>
+    <div class="result"></div>
+    <span class="loader"></span>
+
+<%- include('./includes/footer', {
+    additionalJS: '<script src="/js/index.js"></script>'
+    }) -%>
